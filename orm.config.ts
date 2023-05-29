@@ -4,5 +4,5 @@ export const config: DataSourceOptions = {
   type: 'sqlite',
   database: '.db/compass',
   synchronize: true,
-  entities: [__dirname + '/**/*.entity{.ts,.js}'],
+  entities: [__dirname + 'src/app/*/entity/*.entity{.ts,.js}'],
 }

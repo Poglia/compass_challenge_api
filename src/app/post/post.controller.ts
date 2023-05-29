@@ -8,10 +8,10 @@ import {
   Body,
   Param,
 } from "@nestjs/common";
+import { Post as PostEntity } from "./entity/post.entity";
 
 @Controller("posts")
 export class PostController {
-
   @Post()
   async create(@Body() body) {
     return { body };
@@ -46,9 +46,9 @@ export class PostController {
   }
 
   @Delete(":id")
-  async delete(@Param() params){
+  async delete(@Param() params) {
     return {
-      params
-    }
+      params,
+    };
   }
 }
