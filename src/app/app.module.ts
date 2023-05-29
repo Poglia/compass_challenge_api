@@ -4,13 +4,11 @@ import { AppService } from "./app.service";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { PostEntity } from "./post/post.entity";
 import { UserEntity } from "./user/user.entity";
-import { UserModule } from "./user/user.module";
-import { PostModule } from "./post/post.module";
+import { UserController } from "./user/user.controller";
+// import { PostController } from "./post/post.controller";
 
 @Module({
   imports: [
-    UserModule,
-    PostModule,
     TypeOrmModule.forRoot({
       type: "mongodb",
       url: "mongodb://0.0.0.0:27017",
@@ -20,9 +18,9 @@ import { PostModule } from "./post/post.module";
       useUnifiedTopology: true,
       useNewUrlParser: true,
     }),
-    TypeOrmModule.forFeature([PostEntity, UserEntity]),
+    TypeOrmModule.forFeature([UserEntity]),
   ],
-  controllers: [AppController],
+  controllers: [AppController, UserController],
   providers: [AppService],
   exports: [AppService],
 })

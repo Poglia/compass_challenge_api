@@ -7,26 +7,35 @@ import {
   Delete,
   Body,
   Param,
+  NotFoundException,
 } from "@nestjs/common";
-// import { UserService } from './user.service';
+import { UserEntity } from "../user/user.entity";
+import { MongoRepository } from "typeorm/repository/MongoRepository";
+import { InjectRepository } from "@nestjs/typeorm";
 
 @Controller("api/v1/users")
 export class UserController {
-  //   constructor(private readonly userService: UserService) {}
-
-  @Post()
-  async create(@Body() body) {
-    return { body };
-  }
+  constructor(
+    @InjectRepository(UserEntity)
+    private readonly usersRepository: MongoRepository<UserEntity>,
+  ) {}
 
   @Get()
-  async list() {
-    return { users: [] };
+  public async getUsers(): Promise<UserEntity[]> {
+    return await this.usersRepository.find();
   }
 
-  @Get(":id")
-  async show(@Param() params) {
-    return { user: {}, params };
+  @Get(":user_id")
+  public async getUser(@Param() params): Promise<UserEntity[]> {
+    return await this.usersRepository.find({ user_id: Number(params.user_id) });
+  }
+
+  @Post()
+  public async createUser(
+    @Body() user: Partial<UserEntity>,
+  ): Promise<UserEntity> {
+    return await this.usersRepository.save(new UserEntity(user));
+    // return new UserEntity(user)
   }
 
   @Put(":id")
@@ -48,9 +57,9 @@ export class UserController {
   }
 
   @Delete(":id")
-  async delete(@Param() params){
+  async delete(@Param() params) {
     return {
-      params
-    }
+      params,
+    };
   }
 }
