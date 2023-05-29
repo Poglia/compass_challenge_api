@@ -9,50 +9,36 @@ import {
   Param,
 } from "@nestjs/common";
 import { User as UserEntity } from "./entity/user.entity";
+import { UserService } from "./user.service";
+import { CreateUserDto } from './dto/create.dto';
+import { UpdateUserDto } from './dto/update.dto';
 
 @Controller("users")
 export class UserController {
+  constructor(private readonly usersService: UserService) {}
 
-  // @Get()
-  // public async getUsers(): Promise<UserEntity[]> {
-  //   return await this.usersRepository.find();
-  // }
-
-  // @Get(":user_id")
-  // public async getUser(@Param() params): Promise<UserEntity[]> {
-  //   return await this.usersRepository.find({ user_id: Number(params.user_id) });
-  // }
-
-  // @Post()
-  // public async createUser(
-  //   @Body() user: Partial<UserEntity>,
-  // ): Promise<UserEntity> {
-  //   return await this.usersRepository.save(new UserEntity(user));
-  //   // return new UserEntity(user)
-  // }
-
-  @Put(":id")
-  async update(@Body() body, @Param() params) {
-    return {
-      method: "PUT",
-      body,
-      params,
-    };
+  @Post()
+  create(@Body() createUserDto: CreateUserDto) {
+    return this.usersService.create(createUserDto);
   }
 
-  @Patch(":id")
-  async updatePartial(@Body() body, @Param() params) {
-    return {
-      method: "PATCH",
-      body,
-      params,
-    };
+  @Get()
+  findAll() {
+    return this.usersService.findAll();
   }
 
-  @Delete(":id")
-  async delete(@Param() params) {
-    return {
-      params,
-    };
+  // @Get(':id')
+  // findOne(@Param('id') id: string) {
+  //   return this.usersService.findOne(+id);
+  // }
+
+  @Patch(':id')
+  update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
+    return this.usersService.update(+id, updateUserDto);
+  }
+
+  @Delete(':id')
+  remove(@Param('id') id: string) {
+    return this.usersService.remove(+id);
   }
 }
