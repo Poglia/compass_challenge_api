@@ -3,24 +3,22 @@ import {
   IsOptional,
   IsNumber,
 } from 'class-validator';
+import { User } from 'src/app/user/entity/user.entity';
 
 export class CreatePostDto {
 
-  @IsString()
-  name: string;
-
-  @IsString()
-  user_id: number;
+  @IsNumber()
+  user_id: User;
 
   @IsString()
   post_date: string;
 
   @IsString()
   description: string;
-
+  
   @IsNumber()
   likes: number;
-
+  
   @IsOptional()
-  url_imagem: string;
+  url_image: string;
 }
