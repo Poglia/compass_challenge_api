@@ -8,23 +8,27 @@ import {
   Body,
   Param,
 } from "@nestjs/common";
-import { Post as PostEntity } from "./entity/post.entity";
+import { CreatePostDto } from "../post/dto/create.dto";
+import { ParamId } from "src/decorators/param-id.decorator";
+import { PostService } from "./post.service";
 
 @Controller("posts")
 export class PostController {
+  constructor(private readonly postService: PostService) {}
+
   @Post()
-  async create(@Body() body) {
-    return { body };
+  create(@Body() data: CreatePostDto) {
+    return this.postService.create(data);
   }
 
   @Get()
-  async list() {
-    return { posts: [] };
+  findAll() {
+    return this.postService.findAll();
   }
 
-  @Get(":id")
-  async show(@Param() params) {
-    return { posts: {}, params };
+  @Get(':id')
+  async show(@ParamId() id: number) {
+    return this.postService.findOne(id);
   }
 
   @Put(":id")
