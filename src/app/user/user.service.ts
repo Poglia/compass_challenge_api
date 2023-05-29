@@ -65,12 +65,20 @@ export class UserService {
 
       return { status: HttpStatus.OK, users: data };
     } catch (e) {
-      return { status: HttpStatus.NOT_FOUND, Message: e.message };
+      const data: object = await {
+        status: HttpStatus.NOT_FOUND,
+        Message: e.message,
+      };
     }
   }
 
-  update(id: number, updateUserDto: UpdateUserDto) {
-    return this.userRepository.update(id, updateUserDto);
+  async update(id: number, updateUserDto: UpdateUserDto) {
+    try {
+      const data: object = await this.userRepository.update(id, updateUserDto);
+      return { status: HttpStatus.OK, users: data };
+    } catch (e) {
+      return { status: HttpStatus.NOT_FOUND, Message: e.message };
+    }
   }
 
   remove(id: number) {

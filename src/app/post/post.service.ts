@@ -31,8 +31,7 @@ export class PostService {
   async findOne(id: number) {
     try {
       const data: object = await this.postRepository.findOneBy({ id });
-      if (data == null)
-        throw new NotFoundException("Nenhum post encontrado");
+      if (data == null) throw new NotFoundException("Nenhum post encontrado");
 
       return { status: HttpStatus.OK, users: data };
     } catch (e) {
@@ -40,9 +39,14 @@ export class PostService {
     }
   }
 
-  // update(id: number, updatePostDto: UpdatePostDto) {
-  //   return this.postRepository.update(id, UpdatePostDto);
-  // }
+  async update(id: number, updatePostDto: UpdatePostDto) {
+    try {
+      const data: object = await this.postRepository.update(id, updatePostDto);
+      return { status: HttpStatus.OK, users: data };
+    } catch (e) {
+      return { status: HttpStatus.NOT_FOUND, Message: e.message };
+    }
+  }
 
   remove(id: number) {
     return this.postRepository.delete(id);
