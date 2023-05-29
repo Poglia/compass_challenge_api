@@ -60,7 +60,7 @@ export class UserService {
         },
       });
 
-      if (Array.isArray(data) && data.length === 0)
+      if (data == null)
         throw new NotFoundException("Nenhum usuario encontrado");
 
       return { status: HttpStatus.OK, users: data };
