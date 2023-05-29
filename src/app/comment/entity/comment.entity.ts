@@ -1,12 +1,17 @@
-import { Column, ObjectId, Entity, PrimaryColumn } from "typeorm";
+import { Post } from "src/app/post/entity/post.entity";
+import { User } from "src/app/user/entity/user.entity";
+import { Column, ObjectId, Entity, PrimaryColumn, PrimaryGeneratedColumn, ManyToOne } from "typeorm";
 
-@Entity("comments")
-export class Comments {
-  @PrimaryColumn()
-  id: ObjectId;
+@Entity()
+export class Comment {
+  @PrimaryGeneratedColumn("increment")
+   id: number;
 
-  @Column()
-  user_id: number;
+   @ManyToOne(() => User, (user) => user.comments)
+   user_id: User;
+
+   @ManyToOne(() => Post, (post) => post.comments)
+   post_id: Post;
 
   @Column()
   umsername: string;
@@ -15,7 +20,7 @@ export class Comments {
   comment: string;
 
   constructor(post?: Partial<Comment>) {
-    Object.assign(this, post);
+    Object.assign(this, this.comment);
   }
 }
 

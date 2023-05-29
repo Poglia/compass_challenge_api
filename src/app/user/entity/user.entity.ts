@@ -1,12 +1,19 @@
-import { Column, Entity, PrimaryColumn } from "typeorm";
+import { Comment } from "src/app/comment/entity/comment.entity";
+import { Post } from "src/app/post/entity/post.entity";
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity("users")
+@Entity()
 export class User {
-  @PrimaryColumn()
+  @PrimaryGeneratedColumn('increment')
   id: number;
 
-  @Column()
-  user_id: number;
+  // nao apararece
+  @OneToMany(() => Post, (post) => post.user_id)
+  posts: Post[]
+  
+  // nao apararece
+  @OneToMany(() => Comment, (comment) => comment.user_id)
+  comments: Comment[]
 
   @Column()
   name: string;
@@ -25,10 +32,6 @@ export class User {
 
   @Column()
   profile_photo: string;
-
-  constructor(user?: Partial<User>) {
-    Object.assign(this, user);
-  }
 }
 
 /*

@@ -1,15 +1,24 @@
-import { Column, ObjectId, Entity, PrimaryColumn } from "typeorm";
+import {
+  Column,
+  Entity,
+  PrimaryGeneratedColumn,
+  ManyToOne,
+  OneToMany,
+} from "typeorm";
+import { User } from "src/app/user/entity/user.entity";
+import { Comment } from "src/app/comment/entity/comment.entity";
 
-@Entity("users")
+@Entity()
 export class Post {
-  @PrimaryColumn()
-  id: ObjectId;
+  @PrimaryGeneratedColumn("increment")
+  id: number;
 
-  @Column()
-  user_id: string;
+  @ManyToOne(() => User, (user) => user.comments)
+  user_id: User;
 
-  @Column()
-  user: string;
+  // nao apararece
+  @OneToMany(() => Comment, (comment) => comment.post_id)
+  comments: Comment[];
 
   @Column()
   post_date: string;
