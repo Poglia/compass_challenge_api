@@ -5,10 +5,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { PostEntity } from './post/post.entity';
 import { UserEntity } from './user/user.entity';
 import { UserModule } from './user/user.module';
+import { PostModule } from './post/post.module';
 
 @Module({
   imports: [
     UserModule,
+    PostModule,
     TypeOrmModule.forRoot({
       type: 'mongodb',
       url: 'mongodb://0.0.0.0:27017',
