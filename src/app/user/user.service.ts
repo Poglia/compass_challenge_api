@@ -3,6 +3,7 @@ import {
   Body,
   HttpStatus,
   Injectable,
+  NotFoundException,
 } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
@@ -21,9 +22,9 @@ export class UserService {
     return this.userRepository.save(createUserDto);
   }
 
-  findAll() {
-    return this.userRepository
-      .find({
+  async findAll() {
+    try {
+      const data: object = await this.userRepository.find({
         select: {
           id: true,
           name: true,
@@ -33,25 +34,39 @@ export class UserService {
           password: false,
           profile_photo: true,
         },
-      })
-      .finally(() => {
-        console.log("Status: " + HttpStatus.OK);
       });
+
+      if (Array.isArray(data) && data.length === 0)
+        throw new NotFoundException("Sem usuarios cadastrados");
+
+      return { status: HttpStatus.OK, users: data };
+    } catch (e) {
+      return { status: HttpStatus.NOT_FOUND, Message: e.message };
+    }
   }
 
-  findOne(id: number) {
-    return this.userRepository.find({
-      where: { id },
-      select: {
-        id: true,
-        name: true,
-        user: true,
-        birthdate: true,
-        email: true,
-        password: false,
-        profile_photo: true,
-      },
-    });
+  async findOne(id: number) {
+    try {
+      const data: object = await this.userRepository.find({
+        where: { id },
+        select: {
+          id: true,
+          name: true,
+          user: true,
+          birthdate: true,
+          email: true,
+          password: false,
+          profile_photo: true,
+        },
+      });
+
+      if (Array.isArray(data) && data.length === 0)
+        throw new NotFoundException("Nenhum usuario encontrado");
+
+      return { status: HttpStatus.OK, users: data };
+    } catch (e) {
+      return { status: HttpStatus.NOT_FOUND, Message: e.message };
+    }
   }
 
   update(id: number, updateUserDto: UpdateUserDto) {
