@@ -8,9 +8,9 @@ import {
   Body,
   Param,
 } from "@nestjs/common";
-import { UserEntity } from "../user/user.entity";
+import { User as UserEntity } from "./entity/user.entity";
 
-@Controller("api/v1/users")
+@Controller("users")
 export class UserController {
 
   // @Get()

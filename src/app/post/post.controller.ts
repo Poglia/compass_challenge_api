@@ -8,16 +8,9 @@ import {
   Body,
   Param,
 } from "@nestjs/common";
-import { UserEntity } from "../user/user.entity";
-import { MongoRepository } from "typeorm/repository/MongoRepository";
-import { InjectRepository } from "@nestjs/typeorm";
 
-@Controller("api/v1/posts")
+@Controller("posts")
 export class PostController {
-    constructor(
-        @InjectRepository(UserEntity)
-        private readonly usersRepository: MongoRepository<UserEntity>,
-      ) {}
 
   @Post()
   async create(@Body() body) {
