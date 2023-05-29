@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "user_id": 4,
+      "post_id": 1,
+      "comment": "Linda foto Ana!  🌸"
+    },
+    {
+      "user_id": 13,
+      "post_id": 1,
+      "comment": "Que flores maravilhosas!  🌷"
+    },
+    {
+      "post_id": 2,
+      "user_id": 7,
+      "comment": "Esse livro é muito bom mesmo! 😍"
+    },
+    {
+      "post_id": 2,
+      "user_id": 5,
+      "comment": "Adorei a resenha, vou ler também!  📖"
+    },
+
+    {
+      "post_id": 1,
+      "user_id": 19,
+      "comment": "Que vista incrível!  🌅"
+    },
+    {
+      "post_id": 1,
+      "user_id": 10,
+      "comment": "Aproveita aí, Dener!  😎"
+    },
+    {
+      "post_id": 1,
+      "user_id": 9,
+      "comment": "Bom dia, Emanuelle!  😃"
+    },
+    {
+      "post_id": 1,
+      "user_id": 18,
+      "comment": "Linda foto, ótimo dia pra todos! 🌞"
+    },
+
+    {
+      "post_id": 1,
+      "user_id": 5,
+      "comment": "Que divertido, Gabi!🎉"
+    },
+    {
+      "post_id": 1,
+      "user_id": 16,
+      "comment": "Já quero participar da próxima!  🙌"
+    },
+
+    {
+      "user_id": 14,
+      "post_id": 1,
+      "comment": "Que legal, Gabriel! Qual museu é esse?"
+    },
+    {
+      "post_id": 1,
+      "user_id": 21,
+      "comment": "Ficou linda a foto, hein! 😍"
+    },
+
+    {
+      "user_id": 11,
+      "post_id": 1,
+      "comment": "Bom dia, Isa! Ótima semana pra nós!  🙌"
+    },
+    {
+      "user_id": 14,
+      "post_id": 1,
+      "comment": "O café tá pronto, Isa?  🤤"
+    },
+
+    {
+      "post_id": 1,
+      "user_id": 19,
+      "comment": "Jogão hoje, hein! 🤩"
+    },
+    {
+      "post_id": 1,
+      "user_id": 13,
+      "comment": "Esse gol que eu perdi ainda tá me assombrando 😂"
+    },
+
+    {
+      "user_id": 5,
+      "user": "emanuellemachado",
+      "comment": "Boa sorte, Josiel!  😉"
+    },
+    {
+      "user_id": 20,
+      "post_id": 1,
+      "user": "viniciustelles",
+      "comment": "Essa é a vida, né Josiel!  😅"
+    },
+
+    {
+      "user_id": 1,
+      "post_id": 1,
+      "user": "anairschlinger",
+      "comment": "Ficou incrível, Ka! Adorei o corte!  😍"
+    },
+    {
+      "user_id": 8,
+      "post_id": 1,
+      "user": "gabrielgarcia",
+      "comment": "Tá linda, Kaiane! 🤩"
+    },
+    {
+      "user_id": 18,
+      "post_id": 1,
+      "comment": "Eita, é hoje que eu fico até de manhã!😅"
+    },
+    {
+      "user_id": 7,
+      "post_id": 1,
+      "comment": "Vai rolar live aí, Luiz?  🤔"
+    },
+
+    {
+      "user_id": 4,
+      "post_id": 1,
+      "comment": "Tava tudo delicioso!  😍"
+    },
+    {
+      "user_id": 5,
+      "post_id": 1,
+      "comment": "Precisamos repetir mais vezes! 🙌"
+    },
+
+    {
+      "post_id": 1,
+      "user_id": 9,
+      "comment": "E essa marquinha de sol, hein, Vinicius?  😅"
+    },
+    {
+      "user_id": 2,
+      "post_id": 1,
+      "comment": "Foi muito divertido, precisamos fazer de novo!  🙌"
+    },
+
+    {
+      "user_id": 9,
+      "post_id": 1,
+      "comment": "Quando é a minha vez de escolher a música, hein?  😜"
+    },
+    {
+      "user_id": 8,
+      "post_id": 1,
+      "comment": "Você arrasou no Queen, Yuri!  👏"
+    }
+  ]
+}

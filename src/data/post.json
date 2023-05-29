@@ -1,0 +1,116 @@
+{
+    "posts": [
+      {
+        "user_id": 1,
+        "user": "anairschlinger",
+        "post_date": "2023-04-22T10:15:00",
+        "description": "A primavera chegou!  🌺",
+        "likes": 8,
+        "url_imagem": "https://img.freepik.com/fotos-gratis/foto-de-grande-angular-de-uma-unica-arvore-crescendo-sob-um-ceu-nublado-durante-um-por-do-sol-cercado-por-grama_181624-22807.jpg?w=1060&t=st=1683036673~exp=1683037273~hmac=ce830776bffa6b8d6cc0571909964f8bd52480f6a7e1da4f84833680e73defd4"
+      },
+      {
+        "user_id": 2,
+        "user": "camilabarcellos",
+        "post_date": "2023-04-20T17:30:00",
+        "description": "Finalmente terminei de ler este livro incrível!  📚",
+        "likes": 12
+      },
+      {
+        "user_id": 3,
+        "user": "denerborges",
+        "post_date": "2023-04-19T12:00:00",
+        "description": "Praia no outono é tudo de bom!  🌊🍂",
+        "likes": 20,
+        "url_imagem": "https://img.freepik.com/fotos-gratis/paisagem-de-nevoeiro-matinal-e-montanhas-com-baloes-de-ar-quente-ao-nascer-do-sol_335224-794.jpg?w=1060&t=st=1683036778~exp=1683037378~hmac=68001ccf26712c9e00c682df8cece96dfd0d2c1c8431edcab92e5f2186db038c"
+      },
+      {
+        "user_id": 4,
+        "user": "diegosuarez",
+        "post_date": "2023-04-18T14:45:00",
+        "description": "Mais um dia de trabalho concluído!  💻",
+        "likes": 6
+      },
+      {
+        "user_id": 5,
+        "user": "emanuellescortegagna",
+        "post_date": "2023-04-17T09:30:00",
+        "description": "Bom dia pessoal!  ☀️ ",
+        "likes": 15,
+        "url_imagem": "https://img.freepik.com/fotos-gratis/foto-de-alto-angulo-de-um-deck-de-madeira-na-costa-levando-ao-mar-ao-por-do-sol_181624-27272.jpg?w=1060&t=st=1683036873~exp=1683037473~hmac=19ecf1df17f5a37d72563b67d1073bc9dd57b198be832af30edaa29cb1c53406"
+      },
+      {
+        "user_id": 7,
+        "user": "gabrielfiss",
+        "post_date": "2023-04-16T21:00:00",
+        "description": "Noite de jogos com a galera!  🎲🃏 ",
+        "likes": 18
+      },
+      {
+        "user_id": 8,
+        "user": "gabrielgarcia",
+        "post_date": "2023-04-15T16:20:00",
+        "description": "Adoro visitar museus e ver obras incríveis como essa! 🎨",
+        "likes": 10,
+        "url_imagem": "https://img.freepik.com/fotos-gratis/nascer-do-sol_74190-169.jpg?w=1060&t=st=1683036877~exp=1683037477~hmac=f99c3981f2a3ee593a1e2a6c46af4ddfb8008177e9d09c5c4d1314c1fa46aba5"
+      },
+      {
+        "user_id": 9,
+        "user": "isadorabrito",
+        "post_date": "2023-04-14T08:00:00",
+        "description": "Bom dia, galera! ☕️🌞",
+        "likes": 25
+      },
+      {
+        "user_id": 10,
+        "user": "josevalerio",
+        "post_date": "2023-04-12T19:30:00",
+        "description": "Noite de futebol com a turma!  ⚽️",
+        "likes": 14
+      },
+      {
+        "user_id": 11,
+        "user": "josielmatos",
+        "post_date": "2023-04-11T11:10:00",
+        "description": "Trabalhando de casa hoje!  💻",
+        "likes": 7
+      },
+      {
+        "user_id": 12,
+        "user": "kaianecardozo",
+        "post_date": "2023-04-10T14:00:00",
+        "description": "Meu novo visual!  ‍♀ ‍♀",
+        "likes": 23,
+        "url_imagem": "https://img.freepik.com/fotos-gratis/bela-vista-da-vegetacao-e-uma-ponte-na-floresta-perfeita-para-o-fundo_181624-17827.jpg?w=1060&t=st=1683036879~exp=1683037479~hmac=d33e88e40911f19e845598e214ee4136c917647d8bc79bcd404bd01b22863d7a"
+      },
+      {
+        "user_id": 14,
+        "user": "luizsureto",
+        "post_date": "2023-04-08T21:15:00",
+        "description": "Sextou!  🎉 ",
+        "likes": 31
+      },
+      {
+        "user_id": 17,
+        "user": "victorpithan",
+        "post_date": "2023-04-07T13:00:00",
+        "description": "Dia de almoçar com os amigos do trabalho!  🍝🍷",
+        "likes": 16,
+        "url_imagem": "https://img.freepik.com/fotos-gratis/cascata-barco-limpo-china-natural-rural_1417-1356.jpg?w=1060&t=st=1683036818~exp=1683037418~hmac=8aa2a7c03e82fab0bcdb0fa1aa5a9d866c4eaf1a7aadbb69875f65b5ad87fc4b"
+      },
+      {
+        "user_id": 19,
+        "user": "viniciusperes",
+        "post_date": "2023-04-05T17:30:00",
+        "description": "Dia de praia com a galera! 🌊☀️ ",
+        "likes": 28,
+        "url_imagem": "https://img.freepik.com/fotos-gratis/floresta-do-outono_1182-869.jpg?w=1060&t=st=1683036823~exp=1683037423~hmac=3965f586a4ea5187c951135c50f62494841aec5784ec734427c22296ec49d182"
+      },
+      {
+        "user_id": 21,
+        "user": "yuricaetano",
+        "post_date": "2023-04-03T22:00:00",
+        "description": "Noite de karaokê com os amigos!  🎤🎶 ",
+        "likes": 18
+      }
+    ]
+  }

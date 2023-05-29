@@ -1,0 +1,172 @@
+{
+    "users": [
+      {
+        "name": "Ana Luiza Landim Irschlinger",
+        "user": "analuizalandimirschlinger",
+        "birthdate": "1992-08-05",
+        "email": "ana.irschlinger.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556787.jpg?w=996&t=st=1683037038~exp=1683037638~hmac=fa22db8dd3b110700682c8df309620ee1fd11c8287e0641d8587e960a8ceb3ec"
+      },
+      {
+        "name": "Camila Florão Barcellos",
+        "user": "camilafloraobarcellos",
+        "birthdate": "1993-04-10",
+        "email": "camila.barcellos.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556781.jpg?w=996&t=st=1683037083~exp=1683037683~hmac=bb8d92b080bb6e8d159017738c8f8ee944c103697990314a19edab0a83f04774"
+      },
+      {
+        "name": "Dener Kisner Borges",
+        "user": "denerkisnerborges",
+        "birthdate": "1992-06-03",
+        "email": "dener.borges.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556781.jpg?w=996&t=st=1683037083~exp=1683037683~hmac=bb8d92b080bb6e8d159017738c8f8ee944c103697990314a19edab0a83f04774"
+      },
+      {
+        "name": "Diego Leonardo Martinicorena Suarez",
+        "user": "diegomartinicorenasuarez",
+        "birthdate": "1994-09-27",
+        "email": "diego.suarez.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556781.jpg?w=996&t=st=1683037083~exp=1683037683~hmac=bb8d92b080bb6e8d159017738c8f8ee944c103697990314a19edab0a83f04774"
+      },
+      {
+        "name": "Emanuelle Fritzen Machado",
+        "user": "emanuellefritzenmachado",
+        "birthdate": "1993-01-28",
+        "email": "emanuelle.machado.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556780.jpg?w=996&t=st=1683037086~exp=1683037686~hmac=1f0a0a5546fca998a968ec8c2a5620282aec810d01ea20b1e82920dcdcbb11ca"
+      },
+      {
+        "name": "Emmanuel Enrick Scortegagna",
+        "user": "emmanuelscortegagna",
+        "birthdate": "1994-05-21",
+        "email": "emmanuel.scortegagna.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556779.jpg?w=996&t=st=1683037069~exp=1683037669~hmac=2f1ca3aef22ca833d9ce0285ec666a5c688574c5525d499a7b8dfeda13db4a81"
+      },
+      {
+        "name": "Gabriel Afonso Fiss",
+        "user": "gabrielfiss",
+        "birthdate": "1992-12-07",
+        "email": "gabriel.fiss.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556779.jpg?w=996&t=st=1683037069~exp=1683037669~hmac=2f1ca3aef22ca833d9ce0285ec666a5c688574c5525d499a7b8dfeda13db4a81"
+      },
+      {
+        "name": "Gabriel Medeiros Garcia",
+        "user": "gabrielmedeiros",
+        "birthdate": "1993-10-18",
+        "email": "gabriel.garcia.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556779.jpg?w=996&t=st=1683037069~exp=1683037669~hmac=2f1ca3aef22ca833d9ce0285ec666a5c688574c5525d499a7b8dfeda13db4a81"
+      },
+      {
+        "name": "Isadora de Pinho Brito",
+        "user": "isadorapinhobrito",
+        "birthdate": "1994-06-17",
+        "email": "isadora.brito.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556787.jpg?w=996&t=st=1683037038~exp=1683037638~hmac=fa22db8dd3b110700682c8df309620ee1fd11c8287e0641d8587e960a8ceb3ec"
+      },
+      {
+        "name": "José Valério da Silva Figueira",
+        "user": "josevaleriofigueira",
+        "birthdate": "1993-09-15",
+        "email": "jose.figueira.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556783.jpg?w=996&t=st=1683037100~exp=1683037700~hmac=35886b0b608c5cb499cdcea1c7d5149263c75155a02e0cc4f6593ffa68396aab"
+      },
+      {
+        "name": "Josiel Jesus Matos",
+        "user": "josieljesusmatos",
+        "birthdate": "1992-11-29",
+        "email": "josiel.matos.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556783.jpg?w=996&t=st=1683037100~exp=1683037700~hmac=35886b0b608c5cb499cdcea1c7d5149263c75155a02e0cc4f6593ffa68396aab"
+      },
+      {
+        "name": "Kaiane Gabriela Rodrigues Cardozo",
+        "user": "kaianecardozo",
+        "birthdate": "1994-02-22",
+        "email": "kaiane.cardozo.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556780.jpg?w=996&t=st=1683037086~exp=1683037686~hmac=1f0a0a5546fca998a968ec8c2a5620282aec810d01ea20b1e82920dcdcbb11ca"
+      },
+      {
+        "name": "Luiz Ricardo Brugnera",
+        "user": "luizbrugnera",
+        "birthdate": "1993-05-14",
+        "email": "luiz.brugnera.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556783.jpg?w=996&t=st=1683037100~exp=1683037700~hmac=35886b0b608c5cb499cdcea1c7d5149263c75155a02e0cc4f6593ffa68396aab"
+      },
+      {
+        "name": "Luiz Tadeu Nespatti Sureto",
+        "user": "luizsureto",
+        "birthdate": "1992-07-06",
+        "email": "luiz.sureto.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556776.jpg?w=996&t=st=1683037105~exp=1683037705~hmac=28a82739bdd10313b1f89f60e3eae7c43eccbbd258f6360cf9aa942c2869a0da"
+      },
+      {
+        "name": "Maria Flor Oliveira Di Piero",
+        "user": "mariaflordipiero",
+        "birthdate": "1994-03-31",
+        "email": "maria.piero.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556784.jpg?w=996&t=st=1683037032~exp=1683037632~hmac=f312a8c017b841258855702d4fce1b2f13424ae3ae03a840f8f267b272fe28d1"
+      },
+      {
+        "name": "Pedro Fajreldin Poglia",
+        "user": "pedropoglia",
+        "birthdate": "1993-02-25",
+        "email": "pedro.poglia.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556776.jpg?w=996&t=st=1683037105~exp=1683037705~hmac=28a82739bdd10313b1f89f60e3eae7c43eccbbd258f6360cf9aa942c2869a0da"
+      },
+      {
+        "name": "Victor Rodrigues Pithan",
+        "user": "victorpithan",
+        "birthdate": "1994-07-12",
+        "email": "victor.pithan.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556776.jpg?w=996&t=st=1683037105~exp=1683037705~hmac=28a82739bdd10313b1f89f60e3eae7c43eccbbd258f6360cf9aa942c2869a0da"
+      },
+      {
+        "name": "Vinicius Faller de Oliveira",
+        "user": "viniciusfaller",
+        "birthdate": "1992-09-08",
+        "email": "vinicius.oliveira.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/foto-de-grande-angular-de-uma-unica-arvore-crescendo-sob-um-ceu-nublado-durante-um-por-do-sol-cercado-por-grama_181624-22807.jpg?w=1060&t=st=1683036673~exp=1683037273~hmac=ce830776bffa6b8d6cc0571909964f8bd52480f6a7e1da4f84833680e73defd4"
+      },
+      {
+        "name": "Vinicius Gonçalves Peres",
+        "user": "viniciusperes",
+        "birthdate": "1993-11-17",
+        "email": "vinicius.peres.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556785.jpg?w=996&t=st=1683037035~exp=1683037635~hmac=89f1c3c90eb3a66c97f0c7f70fef15b7455e34d4c84204a495f64e470180c686"
+      },
+      {
+        "name": "Vinicius Madruga Telles",
+        "user": "viniciustelles",
+        "birthdate": "1994-01-23",
+        "email": "vinicius.telles.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556785.jpg?w=996&t=st=1683037035~exp=1683037635~hmac=89f1c3c90eb3a66c97f0c7f70fef15b7455e34d4c84204a495f64e470180c686"
+      },
+      {
+        "name": "Yuri Gonçalves Caetano",
+        "user": "yuricaetano",
+        "birthdate": "1992-10-20",
+        "email": "yuri.caetano.pb@compasso.com.br",
+        "password": "BolsistasUOL",
+        "profile_photo": "https://img.freepik.com/fotos-gratis/renderizacao-3d-do-avatar-de-chamada-de-zoom_23-2149556785.jpg?w=996&t=st=1683037035~exp=1683037635~hmac=89f1c3c90eb3a66c97f0c7f70fef15b7455e34d4c84204a495f64e470180c686"
+      }
+    ]
+  }
