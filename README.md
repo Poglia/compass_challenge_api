@@ -13,7 +13,7 @@
 
 ## 📺 Introduction
 
-This is a project made for the compassUOL scholarship program. This is a part of API project of [CompassProject(https://github.com/Poglia/compass-challenge)]. In the future it will be synchronized with the front end of the application that is currently reading a fake API made with json.
+This is a project made for the compassUOL scholarship program. This is a part of API project of [CompassProject](https://github.com/Poglia/compass-challenge). In the future it will be synchronized with the front end of the application that is currently reading a fake API made with json.
 The authentication system was not ready at the time...
 
 
