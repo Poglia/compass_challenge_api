@@ -6,15 +6,15 @@ import {
   Put,
   Delete,
   Body,
-} from '@nestjs/common';
+} from "@nestjs/common";
 // import { PostService } from './post.service';
 
-@Controller('api/v1/posts')
+@Controller("api/v1/posts")
 export class PostController {
-//   constructor(private readonly postService: PostService) {}
+  //   constructor(private readonly postService: PostService) {}
 
   @Post()
   async createPost(@Body() body) {
-    return {body};
+    return { body };
   }
 }

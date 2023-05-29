@@ -1,7 +1,7 @@
-import { Column, ObjectId, Entity, ObjectIdColumn } from 'typeorm';
-import { CommentEntity } from './comment.entity';
+import { Column, ObjectId, Entity, ObjectIdColumn } from "typeorm";
+import { CommentEntity } from "./comment.entity";
 
-@Entity('users')
+@Entity("users")
 export class PostEntity {
   @ObjectIdColumn()
   id: ObjectId;

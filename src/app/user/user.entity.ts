@@ -1,30 +1,30 @@
-import { Column, ObjectId, Entity, ObjectIdColumn } from 'typeorm';
+import { Column, ObjectId, Entity, ObjectIdColumn } from "typeorm";
 
-@Entity('users')
+@Entity("users")
 export class UserEntity {
   @ObjectIdColumn()
   id: ObjectId;
 
-  @Column() 
+  @Column()
   user_id: string;
 
   @Column()
   name: string;
 
-  @Column() 
+  @Column()
   user: string;
 
-  @Column() 
+  @Column()
   birthdate: string;
 
-  @Column() 
+  @Column()
   email: string;
 
   @Column()
-  password: string
+  password: string;
 
   @Column()
-  profile_photo: string
+  profile_photo: string;
 
   constructor(user?: Partial<UserEntity>) {
     Object.assign(this, user);
