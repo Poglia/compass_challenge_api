@@ -7,11 +7,16 @@ import {
   Delete,
   Body,
   Param,
+  Res,
+  HttpStatus,
+  HttpCode,
+  HttpException
 } from "@nestjs/common";
 import { UserService } from "./user.service";
 import { CreateUserDto } from './dto/create.dto';
 import { UpdateUserDto } from './dto/update.dto';
 import { ParamId } from "src/decorators/param-id.decorator";
+import { emitWarning } from "process";
 
 @Controller("users")
 export class UserController {
@@ -23,6 +28,7 @@ export class UserController {
   }
 
   @Get()
+  @HttpCode(200)
   findAll() {
     return this.userService.findAll();
   }

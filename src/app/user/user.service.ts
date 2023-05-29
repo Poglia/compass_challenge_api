@@ -1,9 +1,14 @@
-import { BadRequestException, Injectable } from "@nestjs/common";
-import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
-import { CreateUserDto } from './dto/create.dto';
-import { UpdateUserDto } from './dto/update.dto';
-import { User as UserEntity } from './entity/user.entity';
+import {
+  BadRequestException,
+  Body,
+  HttpStatus,
+  Injectable,
+} from "@nestjs/common";
+import { InjectRepository } from "@nestjs/typeorm";
+import { Repository } from "typeorm";
+import { CreateUserDto } from "./dto/create.dto";
+import { UpdateUserDto } from "./dto/update.dto";
+import { User as UserEntity } from "./entity/user.entity";
 
 @Injectable()
 export class UserService {
@@ -17,12 +22,35 @@ export class UserService {
   }
 
   findAll() {
-    return this.userRepository.find();
+    return this.userRepository
+      .find({
+        select: {
+          id: true,
+          name: true,
+          user: true,
+          birthdate: true,
+          email: true,
+          password: false,
+          profile_photo: true,
+        },
+      })
+      .finally(() => {
+        console.log("Status: " + HttpStatus.OK);
+      });
   }
-  
+
   findOne(id: number) {
-    return this.userRepository.findOneBy({
-      id
+    return this.userRepository.find({
+      where: { id },
+      select: {
+        id: true,
+        name: true,
+        user: true,
+        birthdate: true,
+        email: true,
+        password: false,
+        profile_photo: true,
+      },
     });
   }
 
