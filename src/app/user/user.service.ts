@@ -19,10 +19,12 @@ export class UserService {
   findAll() {
     return this.userRepository.find();
   }
-
-  // findOne(id: number) {
-  //   return this.userRepository.findOneBy();
-  // }
+  
+  findOne(id: number) {
+    return this.userRepository.findOneBy({
+      id
+    });
+  }
 
   update(id: number, updateUserDto: UpdateUserDto) {
     return this.userRepository.update(id, updateUserDto);
