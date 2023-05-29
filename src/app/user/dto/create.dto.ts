@@ -1,4 +1,3 @@
-import { User } from "../entity/user.entity";
 import {
   IsString,
   IsEmail,
