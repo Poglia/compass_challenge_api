@@ -7,6 +7,7 @@ import {
 } from "typeorm";
 import { User } from "src/app/user/entity/user.entity";
 import { Comment } from "src/app/comment/entity/comment.entity";
+import { isNumber } from "class-validator";
 
 @Entity()
 export class Post {
@@ -29,12 +30,9 @@ export class Post {
   @Column()
   likes: number;
 
-  @Column()
-  url_imagem: string;
+  @Column({ nullable: true})
+  url_image: string;
 
-  constructor(post?: Partial<Post>) {
-    Object.assign(this, post);
-  }
 }
 
 /*
