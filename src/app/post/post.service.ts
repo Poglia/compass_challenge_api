@@ -1,4 +1,4 @@
-import { Injectable } from "@nestjs/common";
+import { HttpStatus, Injectable, NotFoundException } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
 import { UpdatePostDto } from "./dto/update.dto";
@@ -16,12 +16,28 @@ export class PostService {
     return this.postRepository.save(createPostDto);
   }
 
-  findAll() {
-    return this.postRepository.find();
+  async findAll() {
+    try {
+      const data: object = await this.postRepository.find();
+      if (Array.isArray(data) && data.length === 0)
+        throw new NotFoundException("Sem posts cadastrados");
+
+      return { status: HttpStatus.OK, users: data };
+    } catch (e) {
+      return { status: HttpStatus.NOT_FOUND, Message: e.message };
+    }
   }
 
-  findOne(id: number) {
-    return this.postRepository.findOneBy({ id });
+  async findOne(id: number) {
+    try {
+      const data: object = await this.postRepository.findOneBy({ id });
+      if (data == null)
+        throw new NotFoundException("Nenhum post encontrado");
+
+      return { status: HttpStatus.OK, users: data };
+    } catch (e) {
+      return { status: HttpStatus.NOT_FOUND, Message: e.message };
+    }
   }
 
   // update(id: number, updatePostDto: UpdatePostDto) {
